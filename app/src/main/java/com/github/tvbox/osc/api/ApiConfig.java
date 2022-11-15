@@ -115,7 +115,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://43.136.216.26:60006/config/10000/eygvguqb/0");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
